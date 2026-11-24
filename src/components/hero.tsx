@@ -90,7 +90,7 @@ export function Hero() {
             </ul>
 
             {/* Buttons */}
-            <div className="mt-8 flex md:flex-wrap items-center  gap-x-5 md:gap-x-8 md:gap-y-6">
+            <div className="mt-8 flex flex-wrap items-center   gap-x-8 gap-y-6">
           
 
               <a
