@@ -90,7 +90,7 @@ export function Hero() {
             </ul>
 
             {/* Buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-6">
+            <div className="mt-8 flex md:flex-wrap items-center  gap-x-5 md:gap-x-8 md:gap-y-6">
           
 
               <a
@@ -105,7 +105,7 @@ export function Hero() {
                  <a
                 href="/Laura-Nasr-CV.pdf"
                 download
-                className="group inline-flex items-center gap-4 bg-[#c9a45d] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#100f0c] transition-colors hover:bg-[#d8b66e]"
+                className="group inline-flex items-center gap-4 bg-[#c9a45d] px-3 py-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#100f0c] transition-colors hover:bg-[#d8b66e]"
               >
                 Download CV
                 <FiDownload className="text-base transition-transform duration-300 group-hover:translate-y-0.5" />

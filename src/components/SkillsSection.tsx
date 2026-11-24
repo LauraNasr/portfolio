@@ -52,7 +52,7 @@ export default function SkillsSection() {
         </p>
       </div>
 
-      <ul className="flex flex-wrap gap-4">
+   <ul className="grid grid-cols-3 md:flex md:flex-wrap gap-4">
         {skills.map((s) => (
           <li
             key={s.name}
