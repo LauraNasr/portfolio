@@ -44,7 +44,7 @@ export default function About() {
         {/* Left Side: Image Container */}
         <div className="relative flex justify-center lg:col-span-5">
           {/* Background Organic Blob */}
-          <div className="absolute -left-10 -bottom-6 -top-6   -right-3 lg:-right-6 -z-10 rounded-[40%] bg-primary/20 blur-xl opacity-70 transform -rotate-6 transition-all duration-500" />
+          <div className="absolute -left-10 -bottom-6 -top-6   lg:-right-6 -z-10 rounded-[40%] bg-primary/20 blur-xl opacity-70 transform -rotate-6 transition-all duration-500" />
 
           <div className="absolute inset-0 -z-10 rounded-3xl bg-primary/10 blur-2xl scale-110" />
 
@@ -60,7 +60,7 @@ export default function About() {
           </div>
 
           {/* Handwritten Badge */}
-          <div className="absolute   -right-3 lg:-right-6 top-6 z-20 flex flex-col items-center rotate-12 select-none pointer-events-none">
+          <div className="absolute    lg:-right-6 top-6 z-20 flex flex-col items-center rotate-12 select-none pointer-events-none">
             <span className="font-serif text-sm font-medium italic tracking-wide text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               Better
             </span>
