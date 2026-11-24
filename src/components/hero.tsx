@@ -72,9 +72,7 @@ export function Hero() {
           {/* 3. Description, buttons, socials */}
           <div className="relative z-10 pb-12 md:col-start-1 md:row-start-2 md:self-start md:pb-20 md:pt-10">
             <p className="max-w-[420px] text-sm font-light leading-7 text-[#a9a092]">
-              I turn designs into clean, accessible React interfaces. Eager to
-              join a team, learn from experienced engineers and grow with every
-              project.
+             I turn designs into clean, accessible React interfaces. Currently building React websites at in2info, and eager to keep learning and growing with a team.
             </p>
 
             {/* Tech stack */}
