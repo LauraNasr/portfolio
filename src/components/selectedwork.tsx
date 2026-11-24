@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
       "A university website with a hero section, program overview, campus photo gallery, student testimonials and a contact form.",
     image: universityLaptop,
     tags: ["React", "HTML", "CSS", "JavaScript"],
-    live: "https://laura-university-site.netlify.app/",
+    live: "https://my-first-project-uni.vercel.app/",
   
   },
 ];
