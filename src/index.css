@@ -1,0 +1,167 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — "Noir Atelier"
+ * Deep warm black surfaces, champagne-gold accents, editorial serif display.
+ * All colors use oklch. Fonts load via <link> in src/routes/__root.tsx.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-sans: "Jost", "Helvetica Neue", sans-serif;
+
+  --tracking-widest-xl: 0.28em;
+}
+
+:root {
+  --radius: 0rem;
+  --background: oklch(0.165 0.007 80);
+  --foreground: oklch(0.92 0.012 85);
+  --card: oklch(0.2 0.008 80);
+  --card-foreground: oklch(0.92 0.012 85);
+  --popover: oklch(0.2 0.008 80);
+  --popover-foreground: oklch(0.92 0.012 85);
+  --primary: oklch(0.76 0.09 82);
+  --primary-foreground: oklch(0.16 0.007 80);
+  --secondary: oklch(0.24 0.01 80);
+  --secondary-foreground: oklch(0.88 0.015 85);
+  --muted: oklch(0.22 0.008 80);
+  --muted-foreground: oklch(0.64 0.02 82);
+  --accent: oklch(0.76 0.09 82);
+  --accent-foreground: oklch(0.16 0.007 80);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.32 0.012 82);
+  --input: oklch(0.32 0.012 82);
+  --ring: oklch(0.76 0.09 82);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  padding-right: 0.75rem; /* nafs l gap, hayda yalli bi 7el l jump */
+  animation: marquee 35s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+@layer utilities {
+  /* Champagne-gold gradient text, like the gilded display type in the reference */
+  .text-gilded {
+    background-image: linear-gradient(
+      100deg,
+      oklch(0.62 0.075 80) 0%,
+      oklch(0.85 0.09 85) 35%,
+      oklch(0.72 0.085 80) 60%,
+      oklch(0.55 0.06 78) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Hairline section rule */
+  .rule-top {
+    border-top: 1px solid oklch(0.32 0.012 82 / 60%);
+  }
+
+  .label-caps {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .animate-spin-slow {
+    animation: spin 22s linear infinite;
+  }
+  
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
