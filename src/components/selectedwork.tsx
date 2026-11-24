@@ -110,14 +110,14 @@ export function SelectedWork() {
   return (
     <section
       id="work"
-      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-16 md:px-8 md:py-24"
+      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-10 md:px-8 md:py-24"
     >
-      <header className="mb-10 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between">
+      <header className="mb-8 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between">
         <div className="flex flex-col gap-3">
           <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#c9a45c]">
             FEATURED PROJECTS
           </span>
-          <h2 className="text-3xl text-[#f1ede2] sm:text-4xl" style={SERIF}>
+          <h2 className="text-2xl text-[#f1ede2] md:text-4xl" style={SERIF}>
             Real Projects. Real Impact.
           </h2>
           <p className="max-w-xl text-sm leading-relaxed text-[#9a958a] sm:text-base">

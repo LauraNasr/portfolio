@@ -8,17 +8,17 @@ export function CallToAction() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-7xl scroll-mt-20 px-5 py-16 md:px-8 md:py-24"
+      className="mx-auto max-w-7xl scroll-mt-20 px-5 py-10 md:px-8 md:py-24"
     >
       <div className="grid overflow-hidden border border-[#c9a45c]/20 bg-[#0f0d0a] md:grid-cols-2">
         {/* Text */}
         <div className="relative flex flex-col justify-center gap-5 px-8 py-12 md:px-12">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#c9a45c]">
+          <span className=" text-[11px] font-semibold uppercase tracking-[0.3em] text-[#c9a45c]">
             OPEN TO OPPORTUNITIES
           </span>
 
           <h2
-            className="text-3xl leading-tight text-[#c9a45c] sm:text-4xl"
+            className="text-2xl leading-tight text-[#c9a45c] md:text-4xl"
             style={SERIF}
           >
             Looking for a

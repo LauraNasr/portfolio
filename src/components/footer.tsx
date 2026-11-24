@@ -41,11 +41,11 @@ export function Footer() {
 
   return (
     <footer className="border-t border-primary/40">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-10 md:px-8 lg:grid-cols-[1.4fr_1fr_1fr] lg:gap-16">
+      <div className="mx-auto grid max-w-7xl gap-7  pb-5 px-5 py-10 md:px-8 lg:grid-cols-[1.4fr_1fr_1fr] lg:gap-16">
         {/* Brand */}
-        <div className="flex flex-col gap-5">
-          <a href="#top" className="w-fit">
-            <img src={logo} alt="Laura Nasr" className="h-14 w-auto" />
+        <div className="flex flex-col gap-2 md:gap-5">
+          <a href="#top" className="w-fit -mb-1 md:mb-0">
+            <img src={logo} alt="Laura Nasr" className="h-14 w-auto " />
           </a>
 
           <p
@@ -67,7 +67,7 @@ export function Footer() {
         </div>
 
         {/* Navigate */}
-        <nav aria-label="Footer" className="flex flex-col gap-4">
+        <nav aria-label="Footer" className="flex flex-col  gap-2 md:gap-4">
           <span className="label-caps text-primary">Navigate</span>
           <ul className="flex flex-col gap-1">
             {LINKS.map((link) => (
@@ -84,7 +84,7 @@ export function Footer() {
         </nav>
 
         {/* Connect */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2 pb-0 md:gap-4">
           <span className="label-caps text-primary">Connect</span>
           <div className="flex items-center gap-3">
             {SOCIALS.map((s) => (
@@ -104,7 +104,7 @@ export function Footer() {
       </div>
 
       {/* Mobile only, last thing in the footer */}
-      <p className={`px-5 pb-8 text-left lg:hidden ${COPYRIGHT_CLASS}`}>
+      <p className={`px-5 pb-4 -pt-6 text-left lg:hidden ${COPYRIGHT_CLASS}`}>
         © {year} Laura Nasr
       </p>
     </footer>

@@ -29,7 +29,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-16 md:px-8 md:py-24"
+      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-10 md:px-8 md:py-24"
     >
       <div className="mb-12 flex flex-col gap-3 md:mb-16">
         {/* 1. Small Uppercase Tag */}

@@ -37,12 +37,12 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-16 text-[#e8e4d8] md:px-8 md:py-24"
+      className="rule-top mx-auto max-w-7xl scroll-mt-20 px-5 py-10 md:px-8 md:py-24 text-[#e8e4d8] "
     >
-      <div className="mb-12 flex flex-col gap-3 md:mb-16">
+      <div className=" flex flex-col gap-3  mb-8 md:mb-16">
         <span className="label-caps text-[#c9a45c]">Toolkit</span>
         <h2
-          className="text-3xl text-[#f1ede2] sm:text-4xl"
+          className="text-2xl text-[#f1ede2] md:text-4xl"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           Skills & Tools

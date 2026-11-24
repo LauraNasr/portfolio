@@ -95,7 +95,7 @@ export function Services() {
         {/* 2. Main Title (Same Serif font as "More About Me") */}
 
         <h2
-          className="text-3xl text-[#f1ede2] sm:text-4xl"
+          className="text-2xl text-[#f1ede2] md:text-4xl"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           What I Offer

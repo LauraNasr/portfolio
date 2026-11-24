@@ -48,7 +48,7 @@ export function Hero() {
 
             <h1
               aria-label="Laura Nasr"
-              className="select-none font-display text-[17vw] font-medium leading-[0.82] tracking-[-0.055em] text-[#d8b66e] sm:text-[14vw] md:text-[9.5vw] lg:text-[120px] xl:text-[138px]"
+              className="select-none font-display text-[13vw] font-medium leading-[0.82] tracking-[-0.055em] text-[#d8b66e]   lg:text-[120px] xl:text-[138px]"
             >
               <span className="block">Laura</span>
               <span className="mt-3 block">Nasr</span>

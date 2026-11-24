@@ -90,6 +90,9 @@
     color: var(--color-primary-foreground);
   }
 }
+html, body {
+  overflow-x: clip;
+}
 @keyframes marquee {
   to { transform: translateX(-50%); }
 }
